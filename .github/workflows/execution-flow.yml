@@ -84,4 +84,7 @@ jobs:
           run: |
             echo "something wrong"
             echo "${{ github }}"
+  settingworkflow:
+    needs: build
+    uses: ./.github/workflows/reusable.yml        # we are setting up work flow from other files here
 
